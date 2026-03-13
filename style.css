@@ -1,0 +1,270 @@
+body{
+    margin:0;
+    background:#0b0b0b;
+    color:white;
+    font-family:monospace;
+    height:100vh;
+    overflow:hidden;
+    }
+    
+    .container{
+    display:flex;
+    height:100vh;
+    }
+    
+    /* LEFT PANEL */
+    
+    
+
+    .left{
+
+        width:20%;
+        background:black;
+        
+        display:flex;
+        flex-direction:column;
+        
+        justify-content:center;     /* vertical center */
+        align-items:center;         /* horizontal center */
+        
+        border-right:1px solid #222;
+        
+        text-align:center;
+        
+        gap:40px;                   /* space between name block and contact block */
+        
+        padding:20px;
+        
+        }
+        
+        
+        /* NAME */
+        
+        .name{
+        font-size:45px;
+        color:#920000;
+        margin:0;
+        }
+        
+        
+        /* TYPING TEXT */
+        
+        .typing{
+            color:#ffffff;
+            font-size:18px;
+            
+            width:100%;          /* full width so text centers perfectly */
+            
+            text-align:center;
+            
+            margin-top:10px;
+            
+            height:24px;
+            
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            }
+        
+        
+        /* CONTACT BLOCK */
+        
+        .contact{
+        display:flex;
+        flex-direction:column;
+        
+        align-items:center;
+        
+        gap:18px;                   /* spacing between the 4 items */
+        }
+        
+        
+        /* CONTACT ITEMS */
+        
+        .contactItem{
+        
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        
+        gap:10px;
+        
+        color: #ffffff;
+        
+        }
+        
+        
+        /* ICON */
+        
+        .contactItem i{
+        font-size:18px;
+        }
+    
+        .fa-envelope{
+            color:#920000;   /* Gmail red */
+            }
+            
+            .fa-phone{
+            color:#34A853;   /* green */
+            }
+            
+            .fa-linkedin{
+            color:#0A66C2;   /* LinkedIn blue */
+            }
+            
+            .fa-github{
+            color:#ffffff;   /* GitHub white */
+            }
+        
+        /* LINKS */
+        
+        .contactItem a{
+        color:white;
+        text-decoration:none;
+        }
+    
+    /* RIGHT PANEL */
+    
+    .right{
+    width:80%;
+    display:flex;
+    flex-direction:column;
+    }
+    
+    /* TABS */
+    
+    .tabs{
+        display:flex;
+        width:100%;
+        background:#141414;
+        padding:6px;
+        gap:6px;
+        border-bottom:1px solid #333;
+        }
+        
+        .tab{
+        
+        flex:1;
+        text-align:center;
+        padding:12px 0;
+        
+        cursor:pointer;
+        
+        background:linear-gradient(145deg,#1b1b1b,#121212);
+        
+        color:#aaa;
+        
+        border-radius:12px 12px 0 0;
+        
+        transition:0.25s;
+        
+        }
+        
+        .tab:hover{
+        background:#222;
+        color:white;
+        }
+        
+        .tab.active{
+        
+        background:#0f0f0f;
+        color:#ffffff;
+        
+        font-weight:bold;
+        
+        box-shadow:0 -5px 5px #920000;
+        
+        }
+    
+    /* EDITOR */
+    
+    .editor{
+    flex:1;
+    background:#0f0f0f;
+    }
+    
+    /* CODE BLOCK */
+    
+    .codeBlock{
+    display:flex;
+    }
+    
+    /* LINE NUMBERS */
+    
+    .lineNumbers{
+    
+    width:60px;
+    padding-top:0.2px;
+    
+    color:#666;
+    text-align:center;
+    
+    border-right:1px solid #222;
+    
+    font-size:18px;
+    line-height:30px;
+    
+    user-select:none;
+    
+    }
+    
+    /* CODE */
+    
+    .code{
+    
+    margin:0;
+    padding-left:20px;
+    
+    line-height:30px;
+    font-size:16px;
+    
+    white-space:pre;
+    
+    flex:1;
+    
+    display:none;
+    
+    }
+    
+    .code.active{
+    display:block;
+    }
+    
+    /* FUNCTION STYLE */
+    
+    .func{
+    color:#920000;
+    font-weight:bolder;
+    font-size: 18px;
+    }
+
+    /* PROJECT LINKS */
+
+    .repoBtn{
+
+        margin-left:10px;
+        margin-top:8px;
+        
+        padding:3px 12px;
+        
+        background:#111;
+        color:#ffffff;
+        
+        border:1px solid #333;
+        border-radius:6px;
+        
+        cursor:pointer;
+        
+        font-family:monospace;
+        font-size:14px;
+        
+        transition:0.2s;
+        
+        }
+        
+        .repoBtn:hover{
+        
+        background:#920000;
+        border-color:#920000;
+        
+        }

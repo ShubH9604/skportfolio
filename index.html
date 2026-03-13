@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Shubh Kalaria</title>
+    
+<link rel="stylesheet" href="style.css">
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- LEFT PANEL -->
+
+<div class="left">
+
+<div class="profile">
+    
+<h1 class="name"></h1>
+    
+<h2 class="typing"></h2>
+    
+</div>
+    
+    
+<div class="contact">
+
+    <div class="contactItem">
+    <i class="fa-solid fa-envelope"></i>
+    <a href="mailto:shubh.kalaria@gmail.com">shubh.kalaria@gmail.com</a>
+    </div>
+    
+    <div class="contactItem">
+    <i class="fa-solid fa-phone"></i>
+    <span>9978654090</span>
+    </div>
+    
+    <div class="contactItem">
+    <i class="fa-brands fa-linkedin"></i>
+    <a href="https://www.linkedin.com/in/shubh-kalaria09/">shubh-kalaria09</a>
+    </div>
+    
+    <div class="contactItem">
+    <i class="fa-brands fa-github"></i>
+    <a href="https://github.com/ShubH9604">ShubH9604</a>
+    </div>
+    
+    </div>
+    
+</div>
+
+
+<!-- RIGHT PANEL -->
+
+<div class="right">
+
+<div class="tabs">
+
+<div class="tab active" onclick="openTab('home',event)">home.py</div>
+<div class="tab" onclick="openTab('education',event)">education.py</div>
+<div class="tab" onclick="openTab('skills',event)">skills.py</div>
+<div class="tab" onclick="openTab('experience',event)">experience.py</div>
+<div class="tab" onclick="openTab('projects',event)">projects.py</div>
+
+</div>
+
+
+<div class="editor">
+
+<div class="codeBlock">
+
+<div class="lineNumbers" id="lineNumbers"></div>
+
+
+<!-- HOME -->
+
+<pre id="home" class="code active">
+
+<span class="func">def introduction():</span>
+
+    name = "Shubh Kalaria"
+    roles = [
+        "Machine Learning Fanatic",
+        "AI Research Intern",
+        "Reinforcement Learning Explorer",
+        "Full Stack Developer"
+    ]
+
+<span class="func">def about_me():</span>
+
+    """
+    Hands-on experience in building AI-driven applications with Machine Learning, Reinforcement Learning, 
+    NLP, LLMs and Computer Vision. Proficient in Python, SQL, C++, JavaScript, HTML/CSS, and Django.
+
+    I've developed end-to-end AI pipelines, intelligent data extraction systems, and analytics 
+    solutions and also applied Data Structures & Algorithms to design efficient solutions. 
+
+    Currently interning and pursuing B.Tech (CCE) at Manipal University Jaipur, 
+    final semester. Open to final placement or job opportunities.
+
+    """
+
+</pre>
+
+
+
+<!-- EDUCATION -->
+
+<pre id="education" class="code">
+
+<span class="func">def education():</span>
+
+    manipal_university = {
+        "name": "Manipal University Jaipur",
+        "degree": "Bachelor of Technology - BTech",
+        "branch": "Computer and Communication Engineering",
+        "duration": "Jul 2022 - Present"
+    }
+
+
+    kameshwar_education_campus = {
+        "level": "Higher Secondary School",
+        "institution": "Kameshwar Education Campus",
+        "duration": "Jun 2020 - Jun 2022"
+    }
+
+
+    tulip_international_school = {
+        "level": "Secondary School",
+        "institution": "The New Tulip International School",
+        "duration": "Jun 2007 - Jun 2020"
+    }
+
+</pre>
+
+
+
+<!-- SKILLS -->
+
+<pre id="skills" class="code">
+
+<span class="func">def technical_skills():</span>
+
+    skills = [
+        "Machine Learning",
+        "Reinforcement Learning",
+        "NLPs",
+        "LLMs",
+        "CS Fundamentals",
+        "Web Development",
+        "Data Analysis",
+        "Django",
+        "Computer Vision"
+    ]
+
+    languages = [
+        "Python",
+        "JavaScript",
+        "HTML",
+        "CSS",
+        "SQL",
+        "C++",
+        "Java",
+        "C#"
+    ]
+
+</pre>
+
+
+
+<!-- EXPERIENCE -->
+
+<pre id="experience" class="code">
+
+<span class="func">def experience():</span>
+
+    buniyadbyte_digiinfratech = {
+        "role": "AI/ML Research Intern",
+        "company": "BuniyadByte DigiInfratech Pvt Ltd",
+        "duration": "Jan 2026 - Present",
+        "description": "Building AI pipelines using computer vision, geometry processing, LLMs & Autodesk 
+        .NET API to extract structured construction & reinforcement data from PDF, image, & AutoCAD files."
+    }
+    metis_intellisystems = {
+        "role": "AI/ML Intern",
+        "company": "Metis Intellisystems Pvt Ltd",
+        "duration": "May 2025 - Jul 2025",
+        "description": "Worked on intelligent document processing &  data analysis using IBM DocLing & LLMs 
+        to extract structured data, classify bank transactions & annotate bank statements for NLP models."
+    }
+    academor = {
+        "role": "Web Developer Trainee",
+        "company": "Academor",
+        "duration": "Jun 2024 - Jul 2024",
+        "description": "Contributed to web development projects, collaborating with teams to build web 
+        applications, and gaining hands-on experience in modern front-end and back-end technologies."
+    }
+</pre>
+
+
+
+<!-- PROJECTS -->
+
+<pre id="projects" class="code">
+
+    <span class="func">def projects():</span>
+    
+        dreamcontrol = {
+            "title": "DreamControl (ML & RL Project)",
+            "stack": ["Python","PyTorch","IsaacLab","Conda","CUDA","RL","NVIDIA Issac Sim"],
+            "description": "A diffusion-based humanoid system that generates human whole-body motions
+            from offline data & deploys via RL, with my work focused on improving accuracy."
+        }<button class="repoBtn" onclick="openRepo('dreamcontrol')">GitHub Repo</button>
+    
+        careercompass = {
+            "title": "CareerCompass (ML Project)",
+            "stack": ["Python","NLP","numpy","pandas","streamlit"],
+            "description": "An AI-powered chatbot that recommends personalized career paths based on user
+            interests using NLP techniques like TF-IDF and Cosine similarity."
+        }<button class="repoBtn" onclick="openRepo('careercompass')">GitHub Repo</button>
+    
+        hr_data_analysis = {
+            "title": "HR Data Analysis",
+            "stack": ["Tableau","SQL","Excel","Data Visualization"],
+            "description": "An interactive HR analytics dashboard built using the Tableau to analyze 
+            employee attrition, performance and workforce trends."
+        }<button class="repoBtn" onclick="openRepo('hrdata')">GitHub Repo</button>
+    
+    </pre>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
