@@ -1,6 +1,6 @@
 const numbers=document.getElementById("lineNumbers")
 
-for(let i=1;i<=50;i++){
+for(let i=1;i<=28;i++){
 
 const div=document.createElement("div")
 
